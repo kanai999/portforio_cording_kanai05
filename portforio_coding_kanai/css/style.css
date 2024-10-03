@@ -1,0 +1,2131 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+/*
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;*/
+}
+
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+body{
+    background-color: #fffbfa;
+}
+
+/*フォント調整
+.font{
+    font-feature-settings:"palt";
+    }*/
+
+    html {
+        scroll-behavior: smooth;
+    }
+ /* ヘッター */
+.logo{
+    width: 24%;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 50px 30px 50px;
+}
+
+.omoititle{
+    padding: 263px 0px 0px 30px;
+}
+
+.pc-nav{
+    display: flex;
+    align-items: center;
+}
+
+.pc-nav ul{
+    display: flex;
+}
+
+.pc-nav img{
+    width: 35px;
+}
+
+.pc-nav ul li{
+    width: 87px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 50px;
+    font-family: 'Noto Serif JP', serif;
+}
+/*メインビジュアル*/
+.main-vs{
+    text-align: center;
+    position: relative;
+}
+.mainfadeIn {
+ display: none; 
+  }
+
+/*「想いを〜」時間差で表示 */
+.fadeIn{
+    transition-delay: 0.6s;
+}
+
+.main-vs img{
+    width: 95.1%;
+}
+.kokotiyoku{
+    writing-mode: vertical-rl;
+    max-width: 125px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 5%;
+    bottom: 4%;
+    align-items: flex-start;
+}
+
+.hyousousp{display: none;
+}
+
+.tunagu{
+    padding: 21px 17px 21px 17px;
+    flex-grow: 1;
+    border-radius:4px ;
+    margin-left:25px ;
+    background-color: #fffbfa;
+    font-family: ten-mincho-text, serif;
+    font-size: 18px;
+}
+
+.sodateru{
+    padding: 21px 17px 21px 17px;
+    border-radius: 4px;
+    background-color: #fffbfa;
+    font-family: ten-mincho-text, serif;
+    font-size: 18px;
+}
+
+
+
+/* コンセプト*/
+
+.concept{
+    position: relative;
+
+}
+
+.kinoeda1{
+    position: absolute;
+    width: 82%;
+    bottom: -210px;
+    left: 0px;
+    z-index: -1;
+    }
+
+
+     /*viewmoreボタン*/
+.viewmore{
+    font-size: 14px;
+}
+
+.btn-view{
+    margin: 10px;
+}
+
+.btn-view a {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #655046;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 180px;
+    text-align: center; 
+    padding: 4px 16px 4px 10px;
+    margin: 10px;
+    margin-inline: auto;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .btn-view a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 98px;
+    height: 1px;
+    background: #655046;
+    bottom: 0;
+    transition: all 0.3s;
+  }
+  
+  .btn-view a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background: #655046;
+    rotate: 40deg;
+    transform-origin: right center;
+    right: 0px;
+    bottom: 0px;
+    transition: all 0.3s;
+  }
+  
+  .btn-view a:hover::after,
+  .btn-view a:hover::before {
+    translate: 20px 0;
+    transition: all 0.3s;
+  }
+
+  .yadorigis1{
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .yadorigis1-fadeIn{
+    opacity: 1;
+  }
+
+  .yadorigis1 img{
+    width: 50%;
+  }
+
+    .concept-textarea{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-width: 65%;
+        margin: 0 auto;
+    }
+
+    .concept-wrap{
+        display: flex;
+        flex-direction: row-reverses;
+       
+    }
+    .concepttitle{
+        writing-mode: vertical-lr;
+        display: flex;
+        align-items: center;
+        font-family: 'Noto Serif JP', serif;
+        font-weight:normal
+      }
+
+      /* 線伸びる */
+    .concepttitle span {
+        height: 350px;
+    }
+    
+    .concepttitle span::before {
+        content: "";
+        display: block;
+        margin-bottom: 20px;
+        width: 1px;
+        height: 0;
+        background-color: #655046;
+        transition: 0.6s;
+    }
+    
+    .concepttitle-show span::before {
+        height: 340px;
+    }
+
+      .omoititle{
+        writing-mode: vertical-lr;
+        font-size: 90px;
+        color: #ddccc5;
+        font-family: "ten-mincho-text",serif;
+        font-weight: normal;
+        }
+
+        .omoi-wrap{
+            writing-mode: vertical-rl;  
+            padding-top: 255px
+        }
+
+        .omoi{
+            font-size: 18px;
+            padding-left: 73px;
+            font-family: ten-mincho,serif;
+        }
+        .hyousou{
+            line-height: 2.25;
+            font-family: ten-mincho,serif;
+        }
+    
+        .btn-wrap{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin: 80px 150px 0px 0px;
+        }
+   
+/* アバウト */
+
+.about{
+    margin-top: 400px;
+    position: relative;
+}
+
+.about-wrap-top{
+    max-width: 69%;
+    margin: 0 auto;
+}
+
+.about-wrap2-top{
+    display: flex;
+    align-items:flex-end
+    
+}
+
+.about-wrap3-top{
+    writing-mode: vertical-lr;
+    position: relative;
+    left: 13px;
+
+}
+
+.watasititle-top{
+    font-size: 90px;
+    color: #ddccc5;
+    font-family:  "ten-mincho-text",serif;
+}
+
+.abouttitle-top{
+transform: rotateZ(-0deg);
+position: relative;
+writing-mode: vertical-lr;
+display: flex;
+align-items: center;
+top:-90px;
+font-family: 'Noto Serif JP', serif;
+font-weight: normal;
+}
+
+.prof-wrap{
+    padding: left 30px;
+    width: 60%;
+}
+
+.prof{
+    display: flex;
+    max-width: 835px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kozuephoto{
+    width: 38%;
+}
+
+.kannrieiyousi{
+    line-height: 1.53;
+    font-size: 16px;
+    font-feature-settings:"palt";
+    text-align: justify;
+}
+
+.kinoeda2 {
+    position: absolute;
+    width: 64%;
+    bottom: -160px;
+    right: 0px;
+    z-index: -1;
+}
+
+
+.btn-wrap2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 80px 100px 0px 0px;
+}
+
+/* 線が伸びる */
+.abouttitle-top span {
+    height: 240px;
+}
+
+.abouttitle-top span::after {
+    content: "";
+    display: block;
+    margin-bottom: 20px;
+    width: 1px;
+    height: 0;
+    background-color: #655046;
+    transition: 0.6s;
+}
+
+.abouttitle-top-show span::after {
+    height: 240px;
+}
+
+
+/*ワーク*/
+
+.work{
+    margin-top: 307px;
+    position: relative;
+}
+
+.worktitle{
+    display: flex;
+    align-items: center;
+    margin-left: 26%;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.seisakutitle{
+    margin-left:11%
+}
+
+.worktitle span{
+    padding: 0 10px;
+}
+.worktitle::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #4f260b;
+}
+
+.seisakutitle{
+font-size: 90px;
+color: #ddccc5;
+font-family:  "ten-mincho-text",serif;
+font-weight: normal;
+margin-bottom: 30px;
+}
+
+.kinoeda3{
+    position: absolute;
+    z-index: -1;
+    width: 65%;
+    bottom: -180px;
+}
+
+.btn-wrap3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+
+/*スライダー*/
+
+.container {
+    margin: 140px auto 0;
+    max-width: 950px;
+    width: 100%;
+  }
+  /* 中央以外のスライド */
+  .slick-img img {
+    height: auto;
+    opacity: .3;
+    transform: scale(.8);
+    transition: opacity .5s, transform .5s;
+    width: 100%;
+  }
+  /* 中央のスライド */
+  .slider .slick-center img {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .image_link_s{
+    display:block; 
+    position:relative;
+    text-decoration:none;
+   }
+   .image_link img{
+     display:block;
+     width:100%;
+   }
+   .slick-current .image_link_s:before{
+     content:"";
+     display:block;
+     width:100%;
+     height:100%;
+     position:absolute;
+     z-index:2;
+     background:#000;
+     opacity:0;
+     transition:0.3s;
+   }
+
+   .image_link_s .clientname {
+    opacity: 0;
+    width: 100%;
+    transition: 0.3s;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    font-size: 14px;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 100;
+
+}
+
+.slick-current .image_link_s:hover span {
+    opacity: 1;
+}
+
+.slick-current .image_link_s:hover:before{
+     opacity:0.5;
+   }
+
+   .slick-current .image_link_s:hover:after{
+     opacity:1;
+     margin-top:-0.5em;
+   }
+
+/* スライダーレイアウト */
+
+.slick-dots{
+    bottom: -40px;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #668e68
+}
+
+.slick-dots li button:before{
+    color: #b5b7b5;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #668e68;
+}
+
+/*コンタクト*/
+
+.contact{
+    margin-top: 240px;
+}
+
+.otoiawasetitle{
+font-size: 90px;
+color: #ddccc5;
+font-family:  "ten-mincho-text",serif;
+font-weight: normal;
+text-align: right;
+margin-bottom: 30px;
+}
+
+
+.contact-wrap{
+align-items: center;
+flex-direction: row-reverse;
+margin-right:12% ;
+
+}
+
+.contacttitle{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: normal;
+    margin-right: 5%;
+
+}
+
+.contacttitle span{
+    display: flex;
+    align-items: center;
+    margin-right: 40%;
+}
+
+.contacttitle ::before{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #4f260b;
+    margin-right: 10px;
+}
+
+.worktitle{
+    display: flex;
+    align-items: center;
+    margin-left: 35%;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+    font-weight: normal;
+
+}
+
+.inco{
+    position: relative;
+    display: inline;
+    left: 30%;
+    top: -45px;
+}
+
+.inco img{
+    width: 2%;
+}
+
+/*フォーム*/
+.Form {
+    margin: 80px 0px 178px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 55%;
+  }
+
+  .irai{
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.irai p{line-height: 1.62;
+}
+
+
+  .Form-Item {
+    padding-top: 30px;
+    width: 100%;
+
+  }
+
+  .Form-Item-Label {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+  }
+
+  .Form-Item-Label.isMsg {
+    margin-top: 8px;
+  }
+
+  .Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #5bc8ac;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .Form-Item-Input {
+    border: 1px solid #ccc6c4;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 32px;
+    flex: 1;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .Form-Item-Textarea {
+    border: 1px solid #ccc6c4;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .Form-Btn {
+    border: none;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 15px 0px 15px 0px;
+    width: 220px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #668e68;
+    color: #fffbfa;
+    font-size: 16px;
+  }
+
+  .formcopy{
+    display: none;
+  }
+
+ 
+/*フッター*/
+.footer{
+    background: url(../images/footer38@2x-100.jpg) no-repeat center
+    center/cover;
+    padding-top: 115px;
+}
+
+.footer-nav{
+    text-align: center;
+    
+  }
+
+   .footer-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+   }
+    
+
+   .footer-nav ul li {
+    padding: 0px 50px;
+    color:#fffbfa ;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', serif;
+   }
+
+   .footer-nav img{
+    width: 35px;
+   }
+   .copyright {
+    margin: 0;
+    padding: 50px 0 105px 0;
+    color:#fffbfa ;
+    font-family: 'Noto Serif JP', serif;
+   }
+
+
+
+
+/*下層ページ私について*/
+
+.kasout2{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.kasout{
+    margin-top:  312px ;
+   text-align: center;
+     }
+
+     .titlea{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        font-size: 36px;
+        padding-right: 100px;
+        font-family: 'Noto Serif JP', serif;
+     }
+
+     .titlej{
+        font-size: 18px;
+        font-family:  "ten-mincho-text",serif;
+
+     }
+
+     .titlea::after{
+        content: "";
+        height: 140px;
+        width: 1px;
+        background: #4f260b;
+        transform: rotate(45deg);
+        margin-left: 100px;
+     }
+
+     .titlej::before{
+        margin-left: 100px;
+     }
+
+
+.about-wrap{
+    display: flex;
+    margin: 0 auto;
+    max-width: 78%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 325px;
+}
+
+.about-wrap img{
+width: 40%;
+}
+
+
+.midasi{
+padding-top:40px ;
+text-align: center;
+font-size: 21px;
+
+}
+.name-wrap{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.name{
+    font-size: 21px;
+}
+
+.miyoji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        padding-right: 25px;
+
+}
+
+.miyoji::after{
+content: "";
+        height: 20px;
+        width: 1px;
+        background: #4f260b;
+        margin-left: 25px;
+     }
+
+
+.proftext{
+    width: 55%;
+    line-height: 1.73;
+    font-size: 15px;
+    font-feature-settings:"palt";
+}
+
+.profile{
+    line-height: 1.73;
+    text-align: justify;
+}
+
+.profile2{
+    line-height: 1.73;
+    margin-top:20px ;
+    text-align: justify;
+}
+
+
+.skill-wrap{
+    display: flex;
+    max-width: 73%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 306px  auto;
+}
+
+.skill-wrap img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.text{
+    line-height: 1.75;
+    border-bottom: 1px dashed #938683;
+    padding: 40px 0px 20px 0px;
+}
+
+.tool{
+    padding-top: 20px;
+    line-height: 1.5;
+}
+.coding{
+    width: 40%;
+}
+
+.design{
+    width: 40%;
+}
+
+
+
+
+/*下層ページ想い*/
+
+.concept-grop{
+    display: flex;
+    max-width: 1120px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 325px auto;
+}
+
+.yadorigiimg {
+    width: 30%;
+}
+
+.hanakotoba{
+    width: 60%;
+    font-feature-settings:"palt";
+}
+
+.kometaomoi{
+    font-size: 18px;
+    font-family: ten-mincho-text, serif;
+    margin-bottom: 25px;
+}
+.konnnann{
+line-height: 2.2;
+    font-family: ten-mincho-text, serif;
+    font-size: 16px;
+}
+
+
+/*下層ページワーク*/
+
+
+.items{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+margin: 0 auto;
+margin-top:180px ;
+max-width: 65%;
+}
+
+.item{
+    margin-bottom:90px;
+    width: calc(50% - 100px / 2);
+    }
+    
+    .item:nth-child(2n){
+    margin-right:0;
+    }
+    
+    .item:nth-child(6){
+    margin-right:0;
+    }
+
+  /*ホバーアニメーション*/
+    .image_link{
+        position:relative;
+        display:block;
+        height:auto;
+      }
+      .image_link img{
+        display:block;
+        width:100%;
+      }
+      .image_link:before{
+        content:"";
+        display:block;
+        width:100%;
+        height:100%;
+        position:absolute;
+        z-index:2;
+        background:#000;
+        opacity:0;
+        transition:0.3s;
+      }
+      .image_link:hover:before{
+        opacity:0.3;
+      }
+
+.category{
+    font-size: 12px;
+}
+
+
+.category span{
+    background-color: #668e68;
+    padding: 8px 12px 8px 12px;
+    color: #fffbfa;
+    margin: 20px 0px 10px 0px;
+    display: inline-block;
+    align-items: center;
+}
+
+
+
+/* 制作実績各ページ */
+
+.work-img{
+    margin: 180px 0px 144px 0px;
+text-align: center;}
+
+
+.flex-list{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    
+}
+
+.work-text dl{
+    margin-bottom: 18px;
+}
+
+.flex-list dt{
+    min-width: 9em;
+}
+
+
+.work-area{
+    margin: 188px 0px 140px 0px;
+}
+.work-area{
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.flex-list dt {
+    font-size: 14px;
+}
+.flex-list dd{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.work-text{
+    font-feature-settings: "palt";
+}
+
+.work-category p{
+    font-size: 16px;
+}
+
+.setumei{
+    font-size: 14px;
+}
+
+.work-category{
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.setumei{
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: #655046 dashed 1px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.page-sample{
+    margin: 140px 0 140px 0;
+    text-align: center;
+}
+
+.modale-btn{
+    display: none;
+}
+
+.page-sample-wrap{
+    justify-content: space-between;
+    margin:  0 auto;
+    display:flex;
+    align-items: flex-start;
+    margin: 140px 0 140px 0;
+}
+
+.page-sample2{
+    margin-left: 50px;
+}
+
+/*サロン画像ライン*/
+.salonsait{
+    border: solid 1px #b7ada8;
+}
+
+.btn-view-ph{
+    display: none;
+}
+.btn2view{
+    display: none;
+}
+
+ /* お問い合わせはこちらボタン */
+ .btn-contact {
+	font-size: 16px;
+	border: 1px solid #668e68;
+	text-align: center;
+	max-width: 320px;
+    display: block;
+	margin:0 auto;
+    margin-bottom: 90px;
+	
+}
+.btn-contact a {
+	color: #668e68;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 27px;
+	box-sizing: border-box;
+}
+.btn-contact a:hover {
+    border: none;
+    background-color: #668e68;
+    color: #fffbfa;
+    font-weight: 600;
+}
+
+
+/*homeぼたん*/
+
+.home-sec-link{
+    margin: 90px auto;
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;}
+
+
+
+.sec-link span {
+    position: relative;
+    display: inline-block;
+    padding: 18px 84px 0 0;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    transition: all .3s;
+}
+
+.sec-link span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #655046;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+
+.sec-link span::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 47px;
+    height: 6.75px;
+    background: url(../images/arrow39@2x.png) 0 0 no-repeat;
+    background-size: 47px 6.75px;
+    transition: all .3s;
+}
+
+.sec-link:hover span::before{
+    transform: scale(1.2);
+  
+}
+.sec-link:hover span::after{
+translate: 5px 0;
+
+}
+
+
+/* ハンバーガー */
+.sp-nav{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+@media screen and (max-width:1100px){
+    .pc-nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        position:absolute;
+        top: 60px;
+        right: 20px;
+        height: 33px;
+        z-index: 9999;
+    }
+
+    .hamburger span{
+        width: 40px;
+        height: 3px;
+        background: #655046;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .hamburger span::before,
+    .hamburger span::after{
+        content: "";
+        width: 40px;
+        height: 3px;
+        background: #655046;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+.hamburger span::before{
+    bottom: 10px;
+}
+.hamburger span::after{
+    top:10px;
+}
+.open span{
+    background: transparent;
+}
+.open span::before{
+    bottom:0;
+    transform: rotate(45deg);
+}
+    .open span::after{
+        top:0;
+        transform: rotate(135deg);
+    }
+    .sp-nav{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        background: rgba(239, 239, 239, 0.9);
+        z-index: 100;
+    }
+    .sp-nav ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sp-nav ul li a {
+        display: block;
+        padding: 30px 0;
+        font-size: 18px;
+        color: #655046;
+        font-family: 'Noto Serif JP', serif;
+        text-align: center;
+    }
+
+    .sp-nav img{
+        width: 35px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-vs img{
+        width: 100%;
+    }
+    
+    .tunagu {
+        font-size: 16px;
+        padding: 15px 13px 15px 13px;
+        margin-left: 10px;
+    }
+    
+    .sodateru{
+        font-size: 16px;
+        padding: 15px 13px 15px 13px;
+    }
+    
+    .concept-textarea{
+        max-width: 84%;
+    }
+    
+    .hyousou{
+        font-size: 12px;
+        line-height: 1.75;
+    }
+    
+    .omoititle {
+        font-size: 42px;
+        padding: 114px 0px 0px 10px;
+    }
+    
+    .concepttitle span {
+        height: 170px;
+        margin-bottom: 10px;
+    }
+    .concepttitle-show span::before{
+        height: 170px;
+    }
+    
+    .concepttitle::before{
+        height: 170px;
+    }
+    .omoi{
+    font-size: 16px;
+    padding-left: 20px;
+    }
+    .omoi-wrap {
+    padding-top: 115px;
+    }
+    
+    .kinoeda1{
+        bottom: -120px;
+    }
+    
+    .btn-wrap{
+        justify-content: flex-end;
+        margin: 0;
+    }
+    
+    .yadorigis1 img{
+        width: 30%;
+    
+    }
+    
+    /* 私について */
+    .abouttitle-top{
+        font-size: 12px;
+    }
+    .about-wrap-top{
+        max-width: 84%;
+    }
+    
+    .watasititle-top{
+        font-size: 42px;
+    }
+    
+    .name{
+        font-size: 18px;
+    }
+    .hurigana{
+        font-size: 14px;
+    }
+    .kannrieiyousi{
+        font-size: 12px;
+    }
+    
+    .about{
+        margin-top: 200px;
+    }
+    
+    .prof-wrap{
+        position: relative;
+        top:-150px
+    }
+    
+    .kinoeda2{
+        bottom: -5px;
+    }
+    /* 制作実績 */
+    .work{
+        margin-top: 100px;
+    }
+    
+    .seisakutitle{
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+    .worktitle{
+        font-size: 12px;
+        margin-left: 26%;
+    }
+    
+    .container{
+        margin: 80px auto;
+    }
+    
+    .kinoeda3 {
+        width: 75%;
+        bottom: -10%;
+    }
+    
+    
+    /* お問い合わせ */
+    .contact {
+        margin-top: 150px;
+    }
+    
+    .otoiawasetitle{
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+    
+    .contacttitle{
+        font-size: 12px;
+    }
+    
+    .contacttitle span{
+        margin-right: 3%;
+    }
+    
+    .inco {
+        left: 40%;
+        top: -26px;
+    }
+
+    .formcopy{
+        display: block;
+    }
+    
+    .irai p{
+        font-size: 14px;
+    
+    }
+    
+    /* 問い合わせフォーム */
+            .Form {
+              margin-top: 40px;
+              text-align: center;
+            }
+    
+                .Form-Item {
+                  padding-right: 14px;
+                  padding-top: 16px;
+                  padding-bottom: 16px;
+                  flex-wrap: wrap;
+                }
+    
+                .Form-Item-Label {
+                    max-width: inherit;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                  }
+    
+                  .Form-Item-Label.isMsg {
+                    margin-top: 0;
+                  }
+    
+                  .Form-Item-Label-Required {
+                    border-radius: 4px;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    width: 32px;
+                    font-size: 10px;
+                  }
+    
+                  .Form-Item-Input {
+                    margin-left: 0;
+                    height: 40px;
+                    flex: inherit;
+            
+                    font-size: 15px;
+                  }
+    
+                  .Form-Item-Textarea {
+                    margin-left: 0;
+                    height: 200px;
+                    flex: inherit;
+                    font-size: 15px;
+    
+                  }
+    
+                  .Form-Btn {
+                    margin-top: 24px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    width: 160px;
+                    font-size: 16px;
+                  }
+    
+            /* コンセプトスマホ */
+    
+    
+            .yadorigiimg{
+                width: auto;
+            }
+    
+            .hanakotoba{
+                width: auto;
+            }
+    
+            .kasout{
+                margin-top: 150px;
+            }
+    
+    
+            .titlea{
+                font-size: 21px;
+                padding-right: 60px;
+            }
+            
+            .titlej{
+                font-size: 16px;
+            }
+    
+            .concept-grop{
+                width: 86%;
+                display: block;
+            }
+            .concepttitle{
+                font-size: 12px;
+            }
+    
+    
+            .kometaomoi{
+                text-align: center;
+                font-size: 18px;
+            }
+    
+            .konnnann{
+                font-size: 14px;
+            }
+    
+            .hanakotoba{
+                margin-top: 105px;
+            }
+    
+    
+            .titlea::after {
+                content: "";
+                height: 80px;
+                width: 1px;
+                background: #4f260b;
+                transform: rotate(45deg);
+                margin-left: 60px;
+            }
+               
+            /* アバウトスマホ */
+    .about-wrap{
+        display: block;
+        width: auto;
+        margin-top: 260px;
+    }
+    
+    .skill-wrap{
+        display: block;
+        margin: 140px auto;
+    }
+    
+    
+    .about-wrap img{
+        width: auto;
+    }
+    
+    
+    .proftext{
+        width: auto;
+        margin-top: 40px;
+    }
+    
+    .design{
+        width: auto;
+    }
+    
+    
+    .coding{
+        width: auto;
+    }
+    
+    /* ワークスマホ */
+    .items{
+        display: block;
+    }
+    .item{
+        width: auto;
+    }
+    
+    /* ワーク各ページスマホ */
+    
+    
+    
+    .page-sample{
+        display: none;
+    }
+    
+    .page-sample-wrap{
+        display: none;
+    }
+    
+    /* モーダル */
+    
+    .modale-btn{
+        display: block;
+    }
+    
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #668e68;
+        color: #fffbfa;
+        width: 322px;
+        height: 45px;
+        text-decoration: none;
+        transition-duration: 0.3s;
+        margin: 50px auto;
+      }
+      .btn:hover {
+        background: #6b736b;
+        color: #fffbfa;
+      }
+      .remodal {
+        position: relative;
+        padding: 35px;
+      }
+      .remodal img {
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+      }
+      .remodal-cancel {
+        background: #000000;
+        width: 100%;
+        margin-top: 25px;
+      }
+      .remodal-cancel:hover {
+        background: #333;
+      }
+      .remodal{
+        background: transparent;
+      }
+    
+      .modale-btn-wrap{
+        max-width: 320px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+    
+      .remodal-cancel-top-right {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      .remodal-cancel-top-right span{
+    display: block;
+    position: relative;
+    }
+    
+    .remodal-cancel-top-right span::before,
+    .remodal-cancel-top-right span::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 27px;
+    background: #fff;
+    }
+    
+    .remodal-cancel-top-right span::before{
+    transform: translate(-50%,-50%)rotate(45deg);
+    }
+    .remodal-cancel-top-right span::after{
+    transform: translate(-50%,-50%)rotate(-45deg);
+    }
+    
+      .btn2view{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #668e68;
+            color: #fffbfa;
+            width: 155px;
+            height: 35px;
+            text-decoration: none;
+            transition-duration: 0.3s;
+            margin: 50px auto;
+      }
+    
+    
+    
+                 /* フッター */
+        .footer-nav ul{
+            display: block;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 70px;
+           }
+    
+           .footer-nav ul li{
+            padding-bottom: 70px;
+           }
+        }
+    
+
+@media screen and (max-width: 470px) {
+
+    .logo{
+        width: 112px;
+    }
+
+/* トップページスマホ */
+.br1{
+    display:none;
+}
+.br2{
+    display: none;
+}
+.br3{
+    display: none;
+}
+.br4{
+    display: none;
+}
+
+.tunagu {
+    font-size: 16px;
+    padding: 15px 13px 15px 13px;
+    margin-left: 10px;
+}
+
+.sodateru{
+    font-size: 16px;
+    padding: 15px 13px 15px 13px;
+}
+
+.concept-textarea{
+    max-width: 84%;
+}
+
+.hyousou{
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.omoititle {
+    font-size: 42px;
+    padding: 114px 0px 0px 10px;
+}
+
+.concepttitle span {
+    height: 170px;
+    margin-bottom: 10px;
+}
+.concepttitle-show span::before{
+    height: 170px;
+}
+
+.concepttitle::before{
+    height: 170px;
+}
+.omoi{
+font-size: 16px;
+padding-left: 20px;
+}
+.omoi-wrap {
+padding-top: 115px;
+}
+
+.kinoeda1{
+    width: 90%;
+    bottom: -20px;
+}
+
+
+.btn-wrap{
+    justify-content: center;
+    margin: 0;
+}
+
+.yadorigis1 img{
+    width: 30%;
+
+}
+
+
+/* スライダー */
+.slick-next{
+    display: none;
+}
+
+/* 私について */
+.abouttitle-top{
+    font-size: 12px;
+}
+.about-wrap-top{
+    max-width: 84%;
+}
+
+.watasititle-top{
+    font-size: 42px;
+}
+
+.name{
+    font-size: 18px;
+}
+.hurigana{
+    font-size: 14px;
+}
+.kannrieiyousi{
+    font-size: 12px;
+}
+
+.about{
+    margin-top: 200px;
+}
+
+.abouttitle-top span {
+    height: 125px;
+}
+
+.prof-wrap{
+    position: relative;
+    top:-150px
+}
+
+.kinoeda2{
+    bottom: -5px;
+}
+/* 制作実績 */
+.work{
+    margin-top: 100px;
+}
+
+.seisakutitle{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.worktitle{
+    font-size: 12px;
+    margin-left: 26%;
+}
+
+.container{
+    margin: 80px auto;
+}
+
+.kinoeda3 {
+    width: 75%;
+    bottom: -5%;
+}
+
+
+/* お問い合わせ */
+.contact {
+    margin-top: 150px;
+}
+
+.otoiawasetitle{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.contacttitle{
+    font-size: 12px;
+}
+
+.contacttitle span{
+    margin-right: 3%;
+}
+
+.inco {
+    left: 100px;
+    top: -18px;
+}
+
+
+.irai p{
+    font-size: 14px;
+
+}
+
+/* 問い合わせフォーム */
+        .Form {
+          margin-top: 40px;
+          text-align: center;
+        }
+
+            .Form-Item {
+              padding-right: 14px;
+              padding-top: 16px;
+              padding-bottom: 16px;
+              flex-wrap: wrap;
+            }
+
+            .Form-Item-Label {
+                max-width: inherit;
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+              }
+
+              .Form-Item-Label.isMsg {
+                margin-top: 0;
+              }
+
+              .Form-Item-Label-Required {
+                border-radius: 4px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                width: 32px;
+                font-size: 10px;
+              }
+
+              .Form-Item-Input {
+                margin-left: 0;
+                height: 40px;
+                flex: inherit;
+        
+                font-size: 15px;
+              }
+
+              .Form-Item-Textarea {
+                margin-left: 0;
+                height: 200px;
+                flex: inherit;
+                font-size: 15px;
+
+              }
+
+              .Form-Btn {
+                margin-top: 24px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                width: 160px;
+                font-size: 16px;
+              }
+
+              .formcopy{
+                display: block;
+              }
+
+        /* コンセプトスマホ */
+
+
+        .yadorigiimg{
+            width: auto;
+        }
+
+        .hanakotoba{
+            width: auto;
+        }
+
+        .kasout{
+            margin-top: 150px;
+        }
+
+
+        .titlea{
+            font-size: 21px;
+            padding-right: 60px;
+        }
+        
+        .titlej{
+            font-size: 16px;
+        }
+
+        .concept-grop{
+            margin: 150px 30px;
+            display: block;
+        }
+        .concepttitle{
+            font-size: 12px;
+        }
+
+
+        .kometaomoi{
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .konnnann{
+            font-size: 14px;
+        }
+
+        .hanakotoba{
+            margin-top: 105px;
+        }
+
+
+        .titlea::after {
+            content: "";
+            height: 80px;
+            width: 1px;
+            background: #4f260b;
+            transform: rotate(45deg);
+            margin-left: 60px;
+        }
+           
+        /* アバウトスマホ */
+.about-wrap{
+    max-width: 85%;
+    display: block;
+    width: auto;
+    margin-top: 260px;
+}
+
+.skill-wrap{
+    display: block;
+    margin: 140px auto;
+}
+
+
+.about-wrap img{
+    width: auto;
+}
+
+
+.proftext{
+    width: auto;
+    margin-top: 40px;
+}
+
+.design{
+    width: auto;
+}
+
+
+.coding{
+    width: auto;
+}
+
+/* ワークスマホ */
+.items{
+    display: block;
+}
+.item{
+    width: auto;
+}
+
+/* ワーク各ページスマホ */
+
+.page-sample{
+    display: none;
+}
+
+.page-sample-wrap{
+    display: none;
+}
+
+/* モーダル */
+
+.modale-btn{
+    display: block;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #668e68;
+    color: #fffbfa;
+    width: 322px;
+    height: 45px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    margin: 50px auto;
+  }
+  .btn:hover {
+    background: #6b736b;
+    color: #fffbfa;
+  }
+  .remodal {
+    position: relative;
+    padding: 35px;
+  }
+  .remodal img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+  .remodal-cancel {
+    background: #000000;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .remodal-cancel:hover {
+    background: #333;
+  }
+  .remodal{
+    background: transparent;
+  }
+
+  .modale-btn-wrap{
+    max-width: 320px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .remodal-cancel-top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .remodal-cancel-top-right span{
+display: block;
+position: relative;
+}
+
+.remodal-cancel-top-right span::before,
+.remodal-cancel-top-right span::after{
+content: "";
+position: absolute;
+width: 3px;
+height: 27px;
+background: #fff;
+}
+
+.remodal-cancel-top-right span::before{
+transform: translate(-50%,-50%)rotate(45deg);
+}
+.remodal-cancel-top-right span::after{
+transform: translate(-50%,-50%)rotate(-45deg);
+}
+
+  .btn2view{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #668e68;
+        color: #fffbfa;
+        width: 155px;
+        height: 35px;
+        text-decoration: none;
+        transition-duration: 0.3s;
+        margin: 50px auto;
+  }
+
+
+
+             /* フッター */
+    .footer-nav ul{
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 70px;
+       }
+
+       .footer-nav ul li{
+        padding-bottom: 70px;
+       }
+    }
+
+    
+

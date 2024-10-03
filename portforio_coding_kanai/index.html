@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="https://use.typekit.net/qyn4hpi.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'tji3nuw',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+        !function (a) { "function" == typeof define && define.amd ? define(["jquery"], a) : "object" == typeof exports ? module.exports = a(require("jquery")) : a(jQuery) }(function (a) { function i() { var b, c, d = { height: f.innerHeight, width: f.innerWidth }; return d.height || (b = e.compatMode, (b || !a.support.boxModel) && (c = "CSS1Compat" === b ? g : e.body, d = { height: c.clientHeight, width: c.clientWidth })), d } function j() { return { top: f.pageYOffset || g.scrollTop || e.body.scrollTop, left: f.pageXOffset || g.scrollLeft || e.body.scrollLeft } } function k() { if (b.length) { var e = 0, f = a.map(b, function (a) { var b = a.data.selector, c = a.$element; return b ? c.find(b) : c }); for (c = c || i(), d = d || j(); e < b.length; e++)if (a.contains(g, f[e][0])) { var h = a(f[e]), k = { height: h[0].offsetHeight, width: h[0].offsetWidth }, l = h.offset(), m = h.data("inview"); if (!d || !c) return; l.top + k.height > d.top && l.top < d.top + c.height && l.left + k.width > d.left && l.left < d.left + c.width ? m || h.data("inview", !0).trigger("inview", [!0]) : m && h.data("inview", !1).trigger("inview", [!1]) } } } var c, d, h, b = [], e = document, f = window, g = e.documentElement; a.event.special.inview = { add: function (c) { b.push({ data: c, $element: a(this), element: this }), !h && b.length && (h = setInterval(k, 250)) }, remove: function (a) { for (var c = 0; c < b.length; c++) { var d = b[c]; if (d.element === this && d.data.guid === a.guid) { b.splice(c, 1); break } } b.length || (clearInterval(h), h = null) } }, a(f).on("scroll resize scrollstop", function () { c = d = null }), !g.addEventListener && g.attachEvent && g.attachEvent("onfocusin", function () { d = null }) });
+    </script>
+</head>
+
+<body>
+    <header class="header inview fadeIn">
+        <div class="header-wrap">
+            <h1 class="logo"><a href=""><img src="images/logo.png" alt="rogo"></a></h1>
+            <nav class=" pc-nav">
+                <ul>
+                    <li><a href="concept.html">CONCEPT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="work.html">WORK</a></li>
+                    <li><a href="#contact1">CONTACT</a></li>
+                </ul>
+                <a href=""><img src="images/Instagram_Glyph_Black.png"></a>
+            </nav>
+        </div>
+        <div class="hamburger"><span></span></div>
+        <nav class="sp-nav">
+            <ul>
+                <li><a href="concept.html">CONCEPT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="#contact1">CONTACT</a></li>
+                <li><a href=""><img src="images/Instagram_Glyph_Black.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-vs">
+        <div class="imgBox inview fadeIn">
+            <picture>
+                <source srcset="images/topsh47@2x-100.jpg" media="(max-width: 378px)">
+                <img src="images/mainvisual.jpg" alt="メインビジュアル">
+            </picture>
+        </div>
+        <div class="fadeIn delay">
+            <div id="fadeIn delay " class="kokotiyoku">
+                <p class="tunagu">想いを繋げ</p>
+                <p class="sodateru">心地よく育てるデザイン</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="concept">
+        <div class="concept-area">
+            <div class="concept-textarea">
+                <div class="concept-wrap">
+                    <div class="concept-wrap2">
+                        <h2 class="concepttitle"><span></span>CONCEPT</h2>
+                    </div>
+                    <h3 class="omoititle">想い</h3>
+                </div>
+                <div class="omoi-wrap">
+                    <p class="omoi">あなたの「想い」を聞かせてください</p>
+                    <p class="hyousou">表層をよく見せるために<br class="br1">
+                        装飾するのではなく、<br>
+                        お客様の奥にある想いを汲み取って<br>
+                        ヤドリギのようにつなげ、<br class="br2">
+                        形にしていく。<br>
+                        個性が宿った、<br>
+                        あなただからこそのデザインを<br class="br3">
+                        つくる。<br>
+                        デザインに触れた方の人生をより<br class="br4">
+                        良くする。<br>
+                        そのお手伝いをさせてください。
+                    </p>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <div class="btn-view">
+                    <a href="concept.html" class="viewmore">view more</a>
+                </div>
+                <a class="yadorigis1" href="concept.html"><img src="images/yadorigibotan46@2x-8.png"></a>
+            </div>
+        </div>
+        <div class="kinoeda1">
+            <img src="images/kinoeda1@2x.png" alt="枝１">
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-wrap-top">
+            <div class="about-wrap2-top">
+                <div class="about-wrap3-top">
+                    <p class="watasititle-top">私について</p>
+                    <h2 class="abouttitle-top">ABOUT<span></span></h2>
+                </div>
+                <div class="prof">
+                    <div class="kozuephoto"><img src="images/kanai6@72x-100.jpg"></div>
+                    <div class="prof-wrap">
+                        <div class="name-wrap">
+                            <p class="name"><span class="miyoji">金井　梢</span></p>
+                            <p class="hurigana"><span>かない　こずえ</span></p>
+                        </div>
+                        <p class="kannrieiyousi">元管理栄養士。<br>
+                            これまでは「食」を通して相手の課題解決のお手伝いをしてきました。
+                            日常がちょっとワクワクする優しいデザインをお届けしたいと考えています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap2">
+                <div class="btn-view">
+                    <a href="about.html" class="viewmore">view more</a>
+                </div>
+                <a class="yadorigis1" href="about.html">
+                    <img src="images/yadorigibotan46@2x-8.png"></a>
+
+            </div>
+            <div class="kinoeda2">
+                <img src="images/kinoeda2@2x.png" alt="枝２">
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="work-wrap">
+            <h2 class="seisakutitle">制作実績</h2>
+            <h3 class="worktitle"><span>WORK</span></h3>
+        </div>
+        <div class="container">
+            <div class="slider">
+                <div class="slick-img">
+                    <a href="workkoukyu.html" class="image_link_s"><img src="images/burgerlux.jpg" alt="バーガー高級" />
+                        <span class="clientname">新作ハンバーガー告知バナー</span></a>
+                </div>
+                <div class="slick-img">
+                    <a href="workpop.html" class="image_link_s"><img src="images/burgerpop-100.jpg" alt="バーガーポップ" />
+                        <span class="clientname">新作ハンバーガー告知バナー</span></a>
+                </div>
+                <div class="slick-img">
+                    <a href="worksalon.html" class="image_link_s"><img src="images/saronslid46@2x-100.jpg" alt="サロン" />
+                        <span class="clientname">hairsalon　LIFE様</span></a>
+                </div>
+                <div class="slick-img">
+                    <a href="workmobile.html>" class="image_link_s"><img src="images/mobile-100.jpg" alt="モバイル" /><span
+                            class="clientname">デザスタmobile様
+                        </span></a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-wrap3">
+            <div class="btn-view">
+                <a href="work.html" class="viewmore">view more</a>
+            </div>
+            <a class="yadorigis1" href="work.html">
+                <img src="images/yadorigibotan46@2x-8.png"></a>
+
+        </div>
+        <div class="kinoeda3">
+            <img src="images/kinoeda3@2x.png" alt="枝3">
+        </div>
+    </section>
+    <section class="contact" id="contact1">
+        <div class="contact-wrap">
+            <h2 class="otoiawasetitle">お問い合わせ</h2>
+            <h3 class="contacttitle"><span>CONTACT</span></h3>
+        </div>
+        <div class="inco"><img src="images/inko42@2x.png">
+        </div>
+        <div class="Form">
+            <div class="irai">
+                <p>仕事のご依頼・ご相談はこちらから<br class="formcopy">お気軽にお問い合わせください。<br>
+                    (*は入力必須事項です)</p>
+            </div>
+            <form class="contactform"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiJIkw4cfWZiPlNnpJlHtfxa2eIBnhaSsxdxxSQttGPOe-2w/formResponse?pli=1"
+                method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                <div class="Form-Item">
+                    <p class="Form-Item-Label">お名前*</p>
+                    <input type="text" name="entry.152690173" id="name" placeholder="山田太郎" required
+                        class="Form-Item-Input">
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label">フリガナ*</p>
+                    <input type="text" name="entry.696521118" id="name2" placeholder="ヤマダタロウ" required
+                        class="Form-Item-Input">
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label">電話番号</p>
+                    <input type="text" name="entry.397340152" id="tel" placeholder="080-xxxx-xxxx" required
+                        class="Form-Item-Input">
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label">メールアドレス*</p>
+                    <input type="email" name="entry.1474443337" id="mail" placeholder="test@test.com" required
+                        class="Form-Item-Input">
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label isMsg">お問い合わせ内容*</p>
+                    <textarea name="entry.959404034" id="contents" cols="30" rows="10" placeholder="お問い合わせ内容を入力"
+                        required class="Form-Item-Textarea"></textarea>
+                </div>
+                <input type="submit" class="Form-Btn" value="送信する">
+            </form>
+            <script type="text/javascript">
+                var submitted = false;
+            </script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+                onload="if(submitted)  {window.location='thanks.html';}"></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="concept.html">CONCEPT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="#contact1">CONTACT</a></li>
+            </ul>
+            <a href=""><img src="images/Instagram_Glyph_White.png"></a>
+            <p class="copyright">&copy;2024 kozue kanai
+            </p>
+        </nav>
+    </footer>
+
+    <script type="text/javascript">
+        $('.hamburger').on('click', function () {
+            $('.sp-nav').fadeToggle();
+            $('.hamburger').toggleClass('open');
+        });
+
+        // スライダー
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                dots: true,
+                centerMode: true,
+                arrows: false,
+                centerPadding: '0px',
+                slidesToShow: 3,
+            });
+            // レスポンシブ
+            //  {
+            //  breakpoint: 470,
+            //  settings: {
+            //  slidesToShow: 1,
+            //  });
+            //  });
+        });
+
+        // フェードイン
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
+        // 「想い〜」遅れて表示
+        $(function () {
+            setTimeout(function () {
+                $('#fadeIn-delay').fedeIn();
+            }, 300);
+        });
+        // スクロールで線伸びる
+        var scroll;
+        var winH = $(window).height();
+        var objH = $('.concepttitle').outerHeight();
+        var objTop = $('.concepttitle').offset().top;
+        var objBottom = objTop + objH;
+        $(window).on('scroll', function () {
+            scroll = $(window).scrollTop();
+            if (scroll >= objBottom - winH) {
+                $('.concepttitle').addClass("concepttitle-show");
+            }
+        });
+        // スクロールで線伸びる(ABOUT)
+        // var scroll;
+        // var winH = $(window).height();
+        // var objH = $('.abouttitle-top').outerHeight();
+        // var objTop = $('.abouttitle-top').offset().top;
+        // var objBottom = objTop + objH;
+        // $(window).on('scroll', function () {
+        // scroll = $(window).scrollTop();
+        // if (scroll >= objBottom - winH) {
+        // $('.abouttitle-top').addClass("abouttitle-top-show");
+        // }
+        // });
+
+        // ヤドリギフェードイン
+        (function () {
+            $(window).scroll(function () {
+                var winH = $(window).height();
+                var scroll = $(window).scrollTop();
+                var objTop = $('.yadorigis1').offset().top;
+                // スクロールした量が要素の高さを上回ったら
+                // その数値にウィンドウの高さを引き、最後に200pxを足す
+                if (Scroll >= objTop - winH) {
+                    $('.yadorigis1').addClass("yadoeigis1-fadeIn");
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
