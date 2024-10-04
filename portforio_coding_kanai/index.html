@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <header class="header inview fadeIn">
+    <header class="header-fadeIn-delay">
         <div class="header-wrap">
             <h1 class="logo"><a href=""><img src="images/logo.png" alt="rogo"></a></h1>
             <nav class=" pc-nav">
@@ -52,18 +52,18 @@
     </header>
 
     <div class="main-vs">
-        <div class="imgBox inview fadeIn">
+        <div class="header-fadeIn-delay">
             <picture>
                 <source srcset="images/topsh47@2x-100.jpg" media="(max-width: 378px)">
                 <img src="images/mainvisual.jpg" alt="メインビジュアル">
             </picture>
         </div>
-        <div class="fadeIn delay">
-            <div id="fadeIn delay " class="kokotiyoku">
-                <p class="tunagu">想いを繋げ</p>
-                <p class="sodateru">心地よく育てるデザイン</p>
-            </div>
+        <!-- <div class="fadeIn-delay"> -->
+        <div class="kokotiyoku">
+            <p class="tunagu">想いを繋げ</p>
+            <p class="sodateru">心地よく育てるデザイン</p>
         </div>
+        <!-- </div> -->
     </div>
 
     <section class="concept">
@@ -95,7 +95,9 @@
                 <div class="btn-view">
                     <a href="concept.html" class="viewmore">view more</a>
                 </div>
-                <a class="yadorigis1" href="concept.html"><img src="images/yadorigibotan46@2x-8.png"></a>
+                <div class="imgBox inview fadeIn">
+                    <a class="yadorigis1" href="concept.html"><img src="images/yadorigibotan46@2x-8.png"></a>
+                </div>
             </div>
         </div>
         <div class="kinoeda1">
@@ -124,24 +126,26 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-wrap2">
-                <div class="btn-view">
-                    <a href="about.html" class="viewmore">view more</a>
-                </div>
+        </div>
+        <div class="btn-wrap2">
+            <div class="btn-view">
+                <a href="about.html" class="viewmore">view more</a>
+            </div>
+            <div class="imgBox inview fadeIn">
                 <a class="yadorigis1" href="about.html">
                     <img src="images/yadorigibotan46@2x-8.png"></a>
+            </div>
 
-            </div>
-            <div class="kinoeda2">
-                <img src="images/kinoeda2@2x.png" alt="枝２">
-            </div>
+        </div>
+        <div class="kinoeda2">
+            <img src="images/kinoeda2@2x.png" alt="枝２">
         </div>
     </section>
 
     <section class="work">
         <div class="work-wrap">
             <h2 class="seisakutitle">制作実績</h2>
-            <h3 class="worktitle"><span>WORK</span></h3>
+            <p class="worktitle">WORK</p>
         </div>
         <div class="container">
             <div class="slider">
@@ -168,9 +172,10 @@
             <div class="btn-view">
                 <a href="work.html" class="viewmore">view more</a>
             </div>
-            <a class="yadorigis1" href="work.html">
-                <img src="images/yadorigibotan46@2x-8.png"></a>
-
+            <div class="imgBox inview fadeIn">
+                <a class="yadorigis1" href="work.html">
+                    <img src="images/yadorigibotan46@2x-8.png"></a>
+            </div>
         </div>
         <div class="kinoeda3">
             <img src="images/kinoeda3@2x.png" alt="枝3">
@@ -179,9 +184,9 @@
     <section class="contact" id="contact1">
         <div class="contact-wrap">
             <h2 class="otoiawasetitle">お問い合わせ</h2>
-            <h3 class="contacttitle"><span>CONTACT</span></h3>
+            <p class="contacttitle"><span></span>CONTACT</p>
         </div>
-        <div class="inco"><img src="images/inko42@2x.png">
+        <div class="inco inview fadeIn"><img src="images/inko42@2x.png">
         </div>
         <div class="Form">
             <div class="irai">
@@ -203,7 +208,7 @@
                 </div>
                 <div class="Form-Item">
                     <p class="Form-Item-Label">電話番号</p>
-                    <input type="text" name="entry.397340152" id="tel" placeholder="080-xxxx-xxxx" required
+                    <input type="text" name="entry.397340152" id="tel" placeholder="080-xxxx-xxxx"
                         class="Form-Item-Input">
                 </div>
                 <div class="Form-Item">
@@ -255,65 +260,71 @@
                 arrows: false,
                 centerPadding: '0px',
                 slidesToShow: 3,
+                responsive: [{
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
             });
-            // レスポンシブ
-            //  {
-            //  breakpoint: 470,
-            //  settings: {
-            //  slidesToShow: 1,
-            //  });
-            //  });
         });
 
-        // フェードイン
-        $(function () {
-            $(".inview").on("inview", function (event, isInView) {
-                if (isInView) {
-                    $(this).stop().addClass("is-show");
-                }
-            });
-        });
-        // 「想い〜」遅れて表示
+        // メインビジュアル・「想い〜」遅れて表示
         $(function () {
             setTimeout(function () {
-                $('#fadeIn-delay').fedeIn();
+                $('.header-fadeIn-delay').addClass
+                    ('header-fadeIn-delay-show');
             }, 300);
+
+            setTimeout(function () {
+                $('.kokotiyoku').addClass
+                    ('kokotiyoku-show');
+            }, 900);
         });
-        // スクロールで線伸びる
+
+        // コンセプト高さ
         var scroll;
         var winH = $(window).height();
         var objH = $('.concepttitle').outerHeight();
         var objTop = $('.concepttitle').offset().top;
         var objBottom = objTop + objH;
+
+        // アバウト箇所の高さ
+        var objH2 = $('.abouttitle-top').outerHeight();
+        var objTop2 = $('.abouttitle-top').offset().top;
+        var objBottom2 = objTop2 + objH2;
+
+        // ワークの高さ箇所の高さ
+        var objH3 = $('.worktitle').outerHeight();
+        var objTop3 = $('.worktitle').offset().top;
+        var objBottom3 = objTop3 + objH3;
+
+        // コンタクトの高さ箇所の高さ
+        var objH4 = $('.contacttitle').outerHeight();
+        var objTop4 = $('.contacttitle').offset().top;
+        var objBottom4 = objTop4 + objH4;
+
         $(window).on('scroll', function () {
             scroll = $(window).scrollTop();
             if (scroll >= objBottom - winH) {
                 $('.concepttitle').addClass("concepttitle-show");
             }
+            if (scroll >= objBottom2 - winH) {
+                $('.abouttitle-top').addClass("abouttitle-top-show");
+            }
+            if (scroll >= objBottom3 - winH) {
+                $('.worktitle').addClass("worktitle-show");
+            }
+            if (scroll >= objBottom4 - winH) {
+                $('.contacttitle').addClass("contacttitle-show");
+            }
         });
-        // スクロールで線伸びる(ABOUT)
-        // var scroll;
-        // var winH = $(window).height();
-        // var objH = $('.abouttitle-top').outerHeight();
-        // var objTop = $('.abouttitle-top').offset().top;
-        // var objBottom = objTop + objH;
-        // $(window).on('scroll', function () {
-        // scroll = $(window).scrollTop();
-        // if (scroll >= objBottom - winH) {
-        // $('.abouttitle-top').addClass("abouttitle-top-show");
-        // }
-        // });
 
         // ヤドリギフェードイン
-        (function () {
-            $(window).scroll(function () {
-                var winH = $(window).height();
-                var scroll = $(window).scrollTop();
-                var objTop = $('.yadorigis1').offset().top;
-                // スクロールした量が要素の高さを上回ったら
-                // その数値にウィンドウの高さを引き、最後に200pxを足す
-                if (Scroll >= objTop - winH) {
-                    $('.yadorigis1').addClass("yadoeigis1-fadeIn");
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
                 }
             });
         });
