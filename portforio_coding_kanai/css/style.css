@@ -20,7 +20,7 @@ dd {
     padding: 0;
     line-height: 1;
     color: #4f260b;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: "yu-gothic-pr6n", sans-serif;
 /*
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
@@ -372,6 +372,7 @@ font-weight: normal;
     align-items: center;
 }
 
+
 .kozuephoto{
     width: 38%;
 }
@@ -430,6 +431,7 @@ margin-top: 80px;
 .worktitle{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-left: 26%;
     font-family: 'Noto Serif JP', serif;
     font-size: 24px;
@@ -594,6 +596,7 @@ margin-right:12% ;
 
 .contacttitle{
     display: flex;
+    align-items: center;
     font-family: 'Noto Serif JP', serif;
     font-weight: normal;
     margin-right: 5%;
@@ -603,11 +606,10 @@ margin-right:12% ;
 
 .contacttitle span{
     display: flex;
-    align-items: center;
-    width: 100%;
+     width: 100%; 
 }
 
-.contacttitle ::before{
+.contacttitle::before{
     content: "";
     display: block;
     height: 1px;
@@ -615,12 +617,13 @@ margin-right:12% ;
     background: #4f260b;
     margin-right: 10px;
     transition: 1s;
+    opacity: 0;
 }
-.contacttitle-show ::before{
+
+.contacttitle-show::before{
     width: 100%;
     opacity: 1;
 }
-
 
 .worktitle{
     display: flex;
