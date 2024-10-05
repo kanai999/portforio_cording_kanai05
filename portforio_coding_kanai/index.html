@@ -300,22 +300,30 @@
         var objTop = $('.concepttitle').offset().top;
         var objBottom = objTop + objH;
 
-        // アバウト箇所の高さ
-        var objH2 = $('.abouttitle-top').outerHeight();
-        var objTop2 = $('.abouttitle-top').offset().top;
-        var objBottom2 = objTop2 + objH2;
-
-        // ワークの高さ箇所の高さ
-        var objH3 = $('.worktitle').outerHeight();
-        var objTop3 = $('.worktitle').offset().top;
-        var objBottom3 = objTop3 + objH3;
-
-        // コンタクトの高さ箇所の高さ
-        var objH4 = $('.contacttitle').outerHeight();
-        var objTop4 = $('.contacttitle').offset().top;
-        var objBottom4 = objTop4 + objH4;
-
+        var scroll;
+        var winH = $(window).height();
         $(window).on('scroll', function () {
+
+            // コンセプト高さ
+            var objH = $('.concepttitle').outerHeight();
+            var objTop = $('.concepttitle').offset().top;
+            var objBottom = objTop + objH;
+
+            // アバウト箇所の高さ
+            var objH2 = $('.abouttitle-top').outerHeight();
+            var objTop2 = $('.abouttitle-top').offset().top;
+            var objBottom2 = objTop2 + objH2;
+
+            // ワークの高さ箇所の高さ
+            var objH3 = $('.worktitle').outerHeight();
+            var objTop3 = $('.worktitle').offset().top;
+            var objBottom3 = objTop3 + objH3;
+            console.log(objTop3);
+            // コンタクトの高さ箇所の高さ
+            var objH4 = $('.contacttitle').outerHeight();
+            var objTop4 = $('.contacttitle').offset().top;
+            var objBottom4 = objTop4 + objH4;
+
             scroll = $(window).scrollTop();
             if (scroll >= objBottom - winH) {
                 $('.concepttitle').addClass("concepttitle-show");
@@ -326,11 +334,11 @@
             if (scroll >= objBottom3 - winH) {
                 $('.worktitle').addClass("worktitle-show");
             }
-
             if (scroll >= objBottom4 - winH) {
                 $('.contacttitle').addClass("contacttitle-show");
             }
         });
+
 
         // ヤドリギフェードイン
         $(function () {

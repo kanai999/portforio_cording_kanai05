@@ -609,7 +609,7 @@ margin-right:12% ;
      width: 100%; 
 }
 
-.contacttitle::before{
+.contacttitle span::before{
     content: "";
     display: block;
     height: 1px;
@@ -620,7 +620,7 @@ margin-right:12% ;
     opacity: 0;
 }
 
-.contacttitle-show::before{
+.contacttitle-show span::before{
     width: 100%;
     opacity: 1;
 }
