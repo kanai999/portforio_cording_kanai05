@@ -91,7 +91,6 @@ body{
 }
 
 .pc-nav ul li{
-    width: 87px;
     font-size: 16px;
     text-align: center;
     margin-right: 50px;
@@ -252,7 +251,7 @@ body{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        max-width: 65%;
+        max-width: 815px;
         margin: 0 auto;
     }
 
@@ -702,6 +701,7 @@ margin-right:12% ;
     flex: 1;
     width: 100%;
     font-size: 16px;
+    box-sizing: border-box;
   }
 
   .Form-Item-Textarea {
@@ -712,6 +712,7 @@ margin-right:12% ;
     flex: 1;
     width: 100%;
     font-size: 16px;
+    box-sizing: border-box;
   }
   
   .Form-Btn {
@@ -725,6 +726,7 @@ margin-right:12% ;
     background: #668e68;
     color: #fffbfa;
     font-size: 16px;
+    cursor: pointer;
   }
 
   .formcopy{
@@ -1724,17 +1726,8 @@ translate: 5px 0;
     }
 
 /* トップページスマホ */
-.br1{
+.br-pc{
     display:none;
-}
-.br2{
-    display: none;
-}
-.br3{
-    display: none;
-}
-.br4{
-    display: none;
 }
 
 .tunagu {
@@ -1915,6 +1908,7 @@ width: 55%;
 
 /* 問い合わせフォーム */
         .Form {
+            max-width: 78%;
           margin-top: 40px;
           text-align: center;
         }
