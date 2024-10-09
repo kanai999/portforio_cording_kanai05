@@ -1118,6 +1118,10 @@ text-align: center;}
     margin-left: 50px;
 }
 
+.banner{
+    max-width: 70%;
+}
+
 /*サロン画像ライン*/
 .salonsait{
     border: solid 1px #b7ada8;
