@@ -253,10 +253,7 @@ body{
   }
   .fadeIn.is-show {
     opacity: 1;
-  }
-
-  .yadorigis1 img{
-    width: 50%;
+    width: 130px;
   }
 
     .concept-textarea{
@@ -327,7 +324,9 @@ body{
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            margin: 80px 150px 0px 0px;
+            margin-top: 80px;
+            position: relative;
+            right: 350px;
         }
    
 /* アバウト */
@@ -411,13 +410,15 @@ font-weight: normal;
 .btn-wrap2 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 margin-top: 80px;
+position: relative;
+right: 350px;
 }
 
 /* 線が伸びる */
 .abouttitle-top span {
-    height: 225px;
+    height: 215px;
     margin-top: 10px;
 }
 
@@ -432,7 +433,7 @@ margin-top: 80px;
 }
 
 .abouttitle-top-show span::after {
-    height: 230px;
+    height: 215px;
 }
 
 
@@ -749,6 +750,22 @@ margin-right:12% ;
   .formcopy{
     display: none;
   }
+
+  .tanks{
+    max-width: 900px;
+    margin: 0 auto;
+text-align: center;
+padding-top: 200px;
+line-height: 1.5;
+
+  }
+
+  .totop{
+    width: 150px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
 
 
 /*フッター*/
@@ -1122,6 +1139,8 @@ text-align: center;}
     max-width: 70%;
 }
 
+
+
 /*サロン画像ライン*/
 .salonsait{
     border: solid 1px #b7ada8;
@@ -1223,6 +1242,9 @@ translate: 5px 0;
     display: none;
 }
 
+.br-ph{
+    display: none;
+}
 
 @media screen and (max-width:1100px){
     .pc-nav{
@@ -1333,7 +1355,7 @@ translate: 5px 0;
     }
     
     .omoititle {
-        font-size: 42px;
+        font-size: 60px;
         padding: 114px 0px 0px 10px;
     }
     
@@ -1363,31 +1385,32 @@ translate: 5px 0;
     .btn-wrap{
         justify-content: flex-end;
         margin: 0;
+        right: 180px;
     }
-    
-    .yadorigis1 img{
-        width: 30%;
-    
+
+    .fadeIn.is-show{
+        width: 100px;
     }
     
     /* 私について */
     .abouttitle-top{
-        font-size: 12px;
+        font-size: 16px;
+        top: -130px;
     }
 
     .abouttitle-top span{
-        height: 115px;
+        height: 215px;
     }
 
     .abouttitle-top-show span::after{
-        height: 110px;
+        height: 215px;
     }
     .about-wrap-top{
         max-width: 84%;
     }
     
     .watasititle-top{
-        font-size: 42px;
+        font-size: 60px;
     }
     
     .name{
@@ -1408,6 +1431,11 @@ translate: 5px 0;
         position: relative;
         top:-150px
     }
+
+    .btn-wrap2 {
+        bottom: 50px;
+        right: 180px;
+    }
     
     .kinoeda2{
         bottom: -5px;
@@ -1418,11 +1446,11 @@ translate: 5px 0;
     }
     
     .seisakutitle{
-        font-size: 42px;
+        font-size: 60px;
         margin-bottom: 10px;
     }
     .worktitle{
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 26%;
     }
     
@@ -1442,12 +1470,12 @@ translate: 5px 0;
     }
     
     .otoiawasetitle{
-        font-size: 42px;
+        font-size: 60px;
         margin-bottom: 10px;
     }
     
     .contacttitle{
-        font-size: 12px;
+        font-size: 16px;
     }
     
     .contacttitle span{
@@ -1455,7 +1483,6 @@ translate: 5px 0;
     }
     
     .inco {
-        left: 40%;
         top: -26px;
     }
 
@@ -1554,7 +1581,7 @@ translate: 5px 0;
                 display: block;
             }
             .concepttitle{
-                font-size: 12px;
+                font-size: 16px;
             }
     
     
@@ -1740,6 +1767,10 @@ translate: 5px 0;
 
 @media screen and (max-width: 470px) {
 
+    .header-wrap{
+        margin: 60px 30px 30px 30px;;
+    }
+
     .logo{
         width: 112px;
     }
@@ -1802,12 +1833,12 @@ padding-top: 115px;
 .btn-wrap{
     justify-content: center;
     margin-top: 50px;
+    right: 0px;
 }
 
-.yadorigis1 img{
-    width: 30%;
-
-}
+.fadeIn.is-show {
+    width: 65px;
+  }
 
 /* スライダー */
 .slick-next{
@@ -1816,6 +1847,7 @@ padding-top: 115px;
 
 /* 私について */
 .abouttitle-top{
+    top: -90px;
     font-size: 12px;
 }
 .about-wrap-top{
@@ -1865,7 +1897,10 @@ width: 55%;
 
 .btn-wrap2{
     position: relative;
+    justify-content: center;
     top: 5px;
+    right: 0px;
+
 }
 
 .kinoeda2{
@@ -2089,12 +2124,22 @@ width: 55%;
 
 /* ワーク各ページスマホ */
 
+
+.work-area{
+    max-width: 315px;
+}
+
 .page-sample{
     display: none;
 }
 
 .page-sample-wrap{
     display: none;
+}
+
+.work-btn-wrap{
+    max-width: 315px;
+    margin: auto;
 }
 
 /* モーダル */
@@ -2109,7 +2154,7 @@ width: 55%;
     align-items: center;
     background: #668e68;
     color: #fffbfa;
-    width: 322px;
+    width: 100%;
     height: 45px;
     text-decoration: none;
     transition-duration: 0.3s;
@@ -2179,14 +2224,34 @@ transform: translate(-50%,-50%)rotate(-45deg);
         align-items: center;
         background: #668e68;
         color: #fffbfa;
-        width: 155px;
+        width: 140px;
         height: 35px;
         text-decoration: none;
         transition-duration: 0.3s;
         margin: 50px auto;
   }
 
+  /* サンクスページ */
 
+  .tanks{
+    max-width: 330px;
+    margin: auto;
+    text-align: center;
+    margin-top: 127px;
+    line-height: 1.8;
+
+  }
+
+  .br-ph{
+    display: block;
+  }
+
+  .totop{
+    width: 100px;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+}
 
              /* フッター */
     .footer-nav ul{
